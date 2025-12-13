@@ -1,0 +1,6 @@
+if __name__ == '__main__':
+    n = int(input())
+    stri=""
+    for i in range(n):
+        stri=stri+str(i+1)   
+    print(stri)   
