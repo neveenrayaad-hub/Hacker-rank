@@ -1,0 +1,17 @@
+if __name__ == '__main__':
+    full_list=[]
+    Score_list=[]
+    result=[]
+    for i in range(int(input())):
+        name = input()
+        score = float(input())
+        full_list.append([name,score])
+        Score_list.append(score)
+    set1 = set(Score_list) 
+    list1 = sorted(list(set1))
+    for x,y in full_list:
+        if y==list1[1]:
+            result.append(x)
+    result.sort()
+    for name in result:
+        print(name)
