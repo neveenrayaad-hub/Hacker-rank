@@ -1,0 +1,19 @@
+if __name__ == '__main__':
+    N = int(input())
+    List1=[]
+    for i in range (N):
+        c_om_line = input().split()
+        if c_om_line[0]=="insert":
+           List1.insert(int(c_om_line[1]),int(c_om_line[2]))
+        elif c_om_line[0]=="print":
+            print(List1)
+        elif c_om_line[0] == "remove":
+            List1.remove(int(c_om_line[1]))
+        elif c_om_line[0] == "append":
+            List1.append(int(c_om_line[1]))
+        elif c_om_line[0] == "sort":
+             List1.sort()
+        elif c_om_line[0] == "pop":
+              List1.pop()
+        elif c_om_line[0] == "reverse":
+            List1.reverse()  
