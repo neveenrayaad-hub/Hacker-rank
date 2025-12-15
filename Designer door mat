@@ -1,0 +1,42 @@
+x,y = map(int, input().split())
+pattern = ".|."
+dash = "-"
+welcome = "WELCOME"
+pattern_unit_len = len(pattern) 
+for i in range(int(x/2)):
+  
+    k = 2 * i + 1
+   
+    L_P = k * pattern_unit_len
+    
+    L_F = (y - L_P) // 2
+    
+    filler = dash * L_F
+    design = pattern * k
+    
+    row = filler + design + filler
+    print(row)
+
+welcome_len = len(welcome) # 7
+mid_L_F = (y - welcome_len) // 2
+mid_filler = dash * mid_L_F
+
+
+print(mid_filler + welcome + mid_filler)
+
+
+for i in range(x // 2 - 1, -1, -1):
+    
+    
+    k = 2 * i + 1
+    
+    
+    L_P = k * pattern_unit_len
+    
+    L_F = (y - L_P) // 2
+    
+    filler = dash * L_F
+    design = pattern * k
+    
+    row = filler + design + filler
+    print(row)
