@@ -1,0 +1,7 @@
+Set=set()
+n=int(input())
+
+for i in range (n):
+    country_name = input().strip()
+    Set.add(country_name)
+print(len(Set))
