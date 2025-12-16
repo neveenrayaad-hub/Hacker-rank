@@ -2,10 +2,9 @@ def solve(s):
   result=s.split()
   list1=[]
   separator =" "
- # list1 = [word.capitalize() for word in result]
   for word in result:
-    if word and word.isalpha: # Check if the string is NOT empty
-            # Apply capitalization to non-empty words
+    if word and word.isalpha: 
+          
        list1.append(word.capitalize())
     else :
           list1.append(word) 
