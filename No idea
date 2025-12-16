@@ -1,0 +1,15 @@
+n, m = map(int, input().strip().split(' '))
+arr = list(map(int, input().strip().split(' ')))
+
+             
+A_in = input().split()
+A = set(map(int, A_in))
+        
+        
+B_in = input().split()
+B = set(map(int, B_in))
+haapy=0
+for i in arr:
+    haapy=sum([(1 if x in A else -1 if x in B else 0)for x in arr])
+ 
+print(haapy) 
