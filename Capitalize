@@ -1,4 +1,4 @@
-ef solve(s):
+def solve(s):
   result=s.split()
   
   for x in result:
