@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+A=[1,2]
+B=[3,4]
+result=[]
+for i in A:
+    for x in B:
+        result.append((i,x))
+print(*result)        
+        
+        
